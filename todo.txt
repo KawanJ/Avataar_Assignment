@@ -1,0 +1,4 @@
+NavBar:
+- Make more into dropdown
+- Fix the order of Adding/popping links in Links & moreLinks array
+- Handle error when 0 links present

@@ -15,7 +15,6 @@
 
 .links {
   display: flex;
-  gap: 20px;
   align-items: center;
   margin-right: auto;
   border: 1px solid #fff;
@@ -26,4 +25,13 @@
   text-decoration: none;
   margin-left: 256px;
   border: 1px solid #fff;
+}
+
+.more {
+  color: #fff;
+  text-decoration: none;
+  margin-left: auto; /* Pushes the "more" option to the right */
+  padding: 0 16px;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
