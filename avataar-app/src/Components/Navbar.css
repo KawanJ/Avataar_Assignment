@@ -17,21 +17,45 @@
   display: flex;
   align-items: center;
   margin-right: auto;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 
 .item {
   color: #fff;
   text-decoration: none;
-  margin-left: 256px;
-  border: 1px solid #fff;
+  margin-left: 128px;
+  /* border: 1px solid #fff; */
 }
 
 .more {
+  display: flex;
   color: #fff;
-  text-decoration: none;
-  margin-left: auto; /* Pushes the "more" option to the right */
+  align-items: center;
+  margin-left: auto; 
   padding: 0 16px;
-  border: 1px solid #fff;
   cursor: pointer;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -100px;
+  background-color: #ffffff;
+  width: 96px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0 10px;
 }
