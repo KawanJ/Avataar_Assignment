@@ -1,14 +1,13 @@
 NavBar:
-- Make more into dropdown ------------(DONE)------------
-- Dropdown items appear reverse fix that (using shift)
-- Make dropdown appear normal in phone view as well (dont use left css get an alternative)
-- Fix the order of Adding/popping links in Links & moreLinks array ------------(DONE)------------
+- Finish Navbar Dropdown according to Figma
+
+
+Errors:
 - Handle error when 0 links are visible and it still attemts to pop (this only happens when window width gets extremely low)
-- Fix the adding of links into more when more border touches with the link ------------(DONE)------------
-- Refreshing page while window size is less adds 2 overflowing items instead of 1
 
-General:
-- Disable smooth resizing of chrome to look at navbar updates more clearly
+Major Issues:
+- If all Items go into More, resizing back up doesnt work
 
-Minor:
-- Fix "Maximum Update Depth succedded error" which happens sometimes: "react-dom.development.js:86 Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render."
+Minor Issues:
+- Dropdown items appear reverse fix that (using shift)
+- Refreshing page while window size is less adds 2 overflowing items instead of 1 (just fix using a checking function at this point)
