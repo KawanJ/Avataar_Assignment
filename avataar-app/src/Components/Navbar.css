@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #2F302C;
-  padding: 24px 64px 24px 64px;
+  padding: 38px 64px 38px 64px;
   color: #fff;
 }
 
@@ -21,9 +21,8 @@
   justify-content: right;
   width: 139px;
   height: 40px;
-  font-family: 'Lato', sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
@@ -40,7 +39,7 @@
   text-decoration: none;
   margin-left: 36px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
@@ -59,10 +58,11 @@ a.item:hover {
   cursor: pointer;
   position: relative;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  font-family: lato;
 }
 
 .more:hover {
@@ -74,13 +74,14 @@ a.item:hover {
 }
 
 .dropdown-content {
+  background-color: #2F302C;
   display: none;
   position: absolute;
-  top: 100%;
-  left: -100px;
-  background-color: #ffffff;
-  width: 96px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 190px;
+  top: 81px;
+  left: -66px;
+  border-radius: 8px;
+  border: 0.5px;
 }
 
 .dropdown-content.show {
@@ -90,10 +91,14 @@ a.item:hover {
 .dropdown-content a {
   display: flex;
   justify-content: center;
-  color: black;
+  color: white;
   padding: 16px;
   text-decoration: none;
-  margin: 0 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #EEEEEE;
+  color: #2F302C;
 }
 
 .search {
@@ -107,6 +112,7 @@ a.item:hover {
   top: 0;
   right: 0;
   margin-left: 44px;
+  font-weight: 400;
 }
 
 .search img {

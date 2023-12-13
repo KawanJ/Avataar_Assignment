@@ -3,9 +3,12 @@ NavBar:
 
 Errors:
 
-
 Major Issues:
 
 Minor Issues:
 - Dropdown items appear reverse fix that (using shift) (changing this might mess up the double item check system i got)
 
+QOL:
+- Find a better way to do dropdown css doing with variable seems dumb
+- maybe add min width or somethin so navbar doent look dub when less width
+- At the end look into font weight not being like figma

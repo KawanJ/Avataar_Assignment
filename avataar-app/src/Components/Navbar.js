@@ -14,22 +14,20 @@ const Navbar = () => {
   };
 
   const [links, setLinks] = useState([
-    { text: 'HOME', href: 'https://www.google.com' },
-    { text: 'ELECTRONICS', href: 'https://www.google.com' },
-    { text: 'MOVIES', href: 'https://www.google.com' },
-    { text: 'BOOK', href: 'https://www.google.com' },
-    { text: 'MUSIC', href: 'https://www.google.com' },
-    { text: 'CLOTHING', href: 'https://www.google.com' },
-    { text: 'GAMES', href: 'https://www.google.com' },
-    // { text: 'FURNITURE', href: 'https://www.google.com' },
-    // { text: 'ACCESSORIES', href: 'https://www.google.com' },
+    { text: 'HOME', href: 'https://www.avataar.ai' },
+    { text: 'ELECTRONICS', href: 'https://www.avataar.ai' },
+    { text: 'MOVIES', href: 'https://www.avataar.ai' },
+    { text: 'BOOK', href: 'https://www.avataar.ai' },
+    { text: 'MUSIC', href: 'https://www.avataar.ai' },
+    { text: 'CLOTHES', href: 'https://www.avataar.ai' },
+    { text: 'GAMES', href: 'https://www.avataar.ai' },
+    // { text: 'FURNITURE', href: 'https://www.avataar.ai' },
+    // { text: 'ACCESSORIES', href: 'https://www.avataar.ai' },
   ]);
 
   const [moreLinks, setMoreLinks] = useState([]);
 
   const updateRightmostPosition = useCallback(() => {
-    setDropdownOpen(false);
-
     // const navbarElement = document.querySelector('.navbar');
     const linksElement = document.querySelector('.links');
     const moreElement = document.querySelector('.more');
@@ -40,7 +38,7 @@ const Navbar = () => {
     // Check if there is enough space to move an item from moreLinks to links
     if (moreLinks.length > 0) {
       const moreStyles = window.getComputedStyle(moreElement);
-      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) >= (moreLinks[moreLinks.length - 1].text.length * 7) + 90) {
+      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) >= (moreLinks[moreLinks.length - 1].text.length * 7) + 80) {
         const newMoreLinks = moreLinks.slice(0, -1);
         const movedLink = moreLinks[moreLinks.length - 1];
 
@@ -48,7 +46,7 @@ const Navbar = () => {
         setMoreLinks(newMoreLinks);
       }
 
-      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) <= 16 && links.length > 0) {
+      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) <= 8 && links.length > 0) {
         const newLinks = links.slice(0, -1);
         const lastLink = links[links.length - 1];
 
@@ -69,7 +67,7 @@ const Navbar = () => {
 
     //Check for duplicate first item in moreLinks
     if(moreLinks.length>=2 && moreLinks[0] === moreLinks[1]) {
-      setMoreLinks((prevMoreLinks) => moreLinks.slice(1, moreLinks.length));
+      moreLinks.shift();
     }
   }, [links, moreLinks]);
 
