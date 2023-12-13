@@ -1,13 +1,11 @@
 NavBar:
 - Finish Navbar Dropdown according to Figma
 
-
 Errors:
-- Handle error when 0 links are visible and it still attemts to pop (this only happens when window width gets extremely low)
+
 
 Major Issues:
-- If all Items go into More, resizing back up doesnt work
 
 Minor Issues:
-- Dropdown items appear reverse fix that (using shift)
-- Refreshing page while window size is less adds 2 overflowing items instead of 1 (just fix using a checking function at this point)
+- Dropdown items appear reverse fix that (using shift) (changing this might mess up the double item check system i got)
+

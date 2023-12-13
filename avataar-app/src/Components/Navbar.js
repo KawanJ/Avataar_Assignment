@@ -40,7 +40,7 @@ const Navbar = () => {
     // Check if there is enough space to move an item from moreLinks to links
     if (moreLinks.length > 0) {
       const moreStyles = window.getComputedStyle(moreElement);
-      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) >= (moreLinks[moreLinks.length - 1].text.length * 7) + 90 && links.length > 0) {
+      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) >= (moreLinks[moreLinks.length - 1].text.length * 7) + 90) {
         const newMoreLinks = moreLinks.slice(0, -1);
         const movedLink = moreLinks[moreLinks.length - 1];
 
@@ -48,7 +48,7 @@ const Navbar = () => {
         setMoreLinks(newMoreLinks);
       }
 
-      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) <= 16) {
+      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) <= 16 && links.length > 0) {
         const newLinks = links.slice(0, -1);
         const lastLink = links[links.length - 1];
 
@@ -65,6 +65,11 @@ const Navbar = () => {
       
       setLinks(newLinks);
       setMoreLinks((prevMoreLinks) => [...prevMoreLinks, lastLink]);
+    }
+
+    //Check for duplicate first item in moreLinks
+    if(moreLinks.length>=2 && moreLinks[0] === moreLinks[1]) {
+      setMoreLinks((prevMoreLinks) => moreLinks.slice(1, moreLinks.length));
     }
   }, [links, moreLinks]);
 
