@@ -1,16 +1,21 @@
 {
   "files": {
     "main.css": "/Avataar_Assignment/static/css/main.589d685b.css",
-    "main.js": "/Avataar_Assignment/static/js/main.32fbbf5d.js",
+    "main.js": "/Avataar_Assignment/static/js/main.e8f99d1b.js",
     "static/js/787.6fe56a01.chunk.js": "/Avataar_Assignment/static/js/787.6fe56a01.chunk.js",
+    "static/media/gold.jpg": "/Avataar_Assignment/static/media/gold.ff787de9cdcfb0a4497d.jpg",
+    "static/media/green.jpg": "/Avataar_Assignment/static/media/green.9b15c12f0ee0b5f7cb41.jpg",
+    "static/media/purple.jpg": "/Avataar_Assignment/static/media/purple.a7e92f259b49f459c7b6.jpg",
+    "static/media/black.jpg": "/Avataar_Assignment/static/media/black.1b9ad6987eef46bbe79e.jpg",
     "static/media/Lato-Regular.ttf": "/Avataar_Assignment/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/color.jpg": "/Avataar_Assignment/static/media/color.a324f0d4d570fe7cf917.jpg",
     "index.html": "/Avataar_Assignment/index.html",
     "main.589d685b.css.map": "/Avataar_Assignment/static/css/main.589d685b.css.map",
-    "main.32fbbf5d.js.map": "/Avataar_Assignment/static/js/main.32fbbf5d.js.map",
+    "main.e8f99d1b.js.map": "/Avataar_Assignment/static/js/main.e8f99d1b.js.map",
     "787.6fe56a01.chunk.js.map": "/Avataar_Assignment/static/js/787.6fe56a01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.589d685b.css",
-    "static/js/main.32fbbf5d.js"
+    "static/js/main.e8f99d1b.js"
   ]
 }
