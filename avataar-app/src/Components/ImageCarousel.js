@@ -1,30 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import './ImageCarousel.css';
+import blackImg from './../asset/CarouselImages/black.jpg'
+import colorImg from './../asset/CarouselImages/color.jpg'
+import goldImg from './../asset/CarouselImages/gold.jpg'
+import greenImg from './../asset/CarouselImages/green.jpg'
+import purpleImg from './../asset/CarouselImages/purple.jpg'
+import leftArrow from './../asset/arrow_left.png'
+import rightArrow from './../asset/arrow_right.png'
+import dot from './../asset/dot.png'
+import bar from './../asset/bar.png'
 
 const ImageCarousel = () => {
   const images = [
     {
-      src: '/CarouselImages/black.jpg',
+      src: blackImg,
       alt: 'Image 1',
       description: 'Description 1',
     },
     {
-      src: '/CarouselImages/color.jpg',
+      src: colorImg,
       alt: 'Image 2',
       description: 'Description 2',
     },
     {
-      src: '/CarouselImages/gold.jpg',
+      src: goldImg,
       alt: 'Image 3',
       description: 'Description 3',
     },
     {
-      src: '/CarouselImages/green.jpg',
+      src: greenImg,
       alt: 'Image 4',
       description: 'Description 4',
     },
     {
-      src: '/CarouselImages/purple.jpg',
+      src: purpleImg,
       alt: 'Image 5',
       description: 'Description 5',
     },
@@ -92,14 +101,14 @@ const ImageCarousel = () => {
         {!isHidden && (<div className='desc'> {images[carouselState-1].description} </div>)}
       </div>
       <div className='nav'>
-        <img src='/assets/arrow_left.png' alt='Left' onClick={goLeft}></img>
+        <img src={leftArrow} alt='Left' onClick={goLeft}></img>
         {Array.from({ length: 5 }).map((_, index) => (
           <img
-            src={index === carouselState-1 ? '/assets/bar.png' : '/assets/dot.png'}
+            src={index === carouselState-1 ? bar : dot}
             alt='State'
           />
         ))}
-        <img src='/assets/arrow_right.png' alt='Right' onClick={goRight}></img>
+        <img src={rightArrow} alt='Right' onClick={goRight}></img>
       </div>
     </div>
   );
