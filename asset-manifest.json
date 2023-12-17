@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Avataar_Assignment/static/css/main.589d685b.css",
+    "main.js": "/Avataar_Assignment/static/js/main.32fbbf5d.js",
+    "static/js/787.6fe56a01.chunk.js": "/Avataar_Assignment/static/js/787.6fe56a01.chunk.js",
+    "static/media/Lato-Regular.ttf": "/Avataar_Assignment/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "index.html": "/Avataar_Assignment/index.html",
+    "main.589d685b.css.map": "/Avataar_Assignment/static/css/main.589d685b.css.map",
+    "main.32fbbf5d.js.map": "/Avataar_Assignment/static/js/main.32fbbf5d.js.map",
+    "787.6fe56a01.chunk.js.map": "/Avataar_Assignment/static/js/787.6fe56a01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.589d685b.css",
+    "static/js/main.32fbbf5d.js"
+  ]
+}
