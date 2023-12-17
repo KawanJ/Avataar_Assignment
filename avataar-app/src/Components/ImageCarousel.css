@@ -1,0 +1,320 @@
+.container {
+  height: 541px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 541px;
+}
+
+.desc {
+  position: absolute;
+  width: 758px;
+  height: 20px;
+  top: 478px;
+  left: calc(50% - 788px / 2);
+  padding: 16px;
+  gap: 4px;
+  background: #231F2080;
+  z-index: 5;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 20px;
+}
+
+.carousel.state-1 img {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.carousel.state-1 img:nth-child(1) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(15% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-1 img:nth-child(2) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(27.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-1 img:nth-child(3) {
+  width: 789px;
+  height: 520px;
+  border-radius: 25.26px;
+  border: 1.08px solid #FFFFFF;
+  box-shadow: 0px 9px 9px 0px #1365E233;
+  left: calc(50% - 789px / 2);
+  z-index: 3;
+}
+
+.carousel.state-1 img:nth-child(4) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(72.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-1 img:nth-child(5) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(85% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-2 img {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.carousel.state-2 img:nth-child(1) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(85% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-2 img:nth-child(2) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(15% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-2 img:nth-child(3) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(27.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-2 img:nth-child(4) {
+  width: 789px;
+  height: 520px;
+  border-radius: 25.26px;
+  border: 1.08px solid #FFFFFF;
+  box-shadow: 0px 9px 9px 0px #1365E233;
+  left: calc(50% - 789px / 2);
+  z-index: 3;
+}
+
+.carousel.state-2 img:nth-child(5) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(72.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-3 img {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.carousel.state-3 img:nth-child(1) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(72.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-3 img:nth-child(2) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(85% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-3 img:nth-child(3) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(15% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-3 img:nth-child(4) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(27.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-3 img:nth-child(5) {
+  width: 789px;
+  height: 520px;
+  border-radius: 25.26px;
+  border: 1.08px solid #FFFFFF;
+  box-shadow: 0px 9px 9px 0px #1365E233;
+  left: calc(50% - 789px / 2);
+  z-index: 3;
+}
+
+.carousel.state-4 img {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.carousel.state-4 img:nth-child(1) {
+  width: 789px;
+  height: 520px;
+  border-radius: 25.26px;
+  border: 1.08px solid #FFFFFF;
+  box-shadow: 0px 9px 9px 0px #1365E233;
+  left: calc(50% - 789px / 2);
+  z-index: 3;
+}
+
+.carousel.state-4 img:nth-child(2) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(72.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-4 img:nth-child(3) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(85% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-4 img:nth-child(4) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(15% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-4 img:nth-child(5) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(27.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-5 img {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.carousel.state-5 img:nth-child(1) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(27.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-5 img:nth-child(2) {
+  width: 789px;
+  height: 520px;
+  border-radius: 25.26px;
+  border: 1.08px solid #FFFFFF;
+  box-shadow: 0px 9px 9px 0px #1365E233;
+  left: calc(50% - 789px / 2);
+  z-index: 3;
+}
+
+.carousel.state-5 img:nth-child(3) {
+  width: 419.24px;
+  height: 276.27px;
+  background: #FFFFFF;
+  border-radius: 16.16px;
+  border: 0.69px solid #FFFFFF;
+  left: calc(72.5% - 419.24px / 2);
+  z-index: 2;
+}
+
+.carousel.state-5 img:nth-child(4) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(85% - 263.43px / 2);
+  z-index: 1;
+}
+
+.carousel.state-5 img:nth-child(5) {
+  width: 263.43px;
+  height: 173.59px;
+  background: #FFFFFF;
+  border: 0.43px solid #FFFFFF;
+  border-radius: 10.15px;
+  left: calc(15% - 263.43px / 2);
+  z-index: 1;
+}
+
+.nav {
+  height: 40px;
+  top: 40px;
+  padding: 8px;
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav img {
+  cursor: pointer;
+}

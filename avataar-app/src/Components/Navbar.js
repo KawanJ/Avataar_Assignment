@@ -15,12 +15,12 @@ const Navbar = () => {
 
   const [links, setLinks] = useState([
     { text: 'HOME', href: 'https://www.avataar.ai' },
-    { text: 'ELECTRONICS', href: 'https://www.avataar.ai' },
     { text: 'MOVIES', href: 'https://www.avataar.ai' },
     { text: 'BOOK', href: 'https://www.avataar.ai' },
     { text: 'MUSIC', href: 'https://www.avataar.ai' },
     { text: 'CLOTHES', href: 'https://www.avataar.ai' },
-    { text: 'GAMES', href: 'https://www.avataar.ai' },
+    { text: 'ELECTRONICS', href: 'https://www.avataar.ai' },
+    // { text: 'GAMES', href: 'https://www.avataar.ai' },
     // { text: 'FURNITURE', href: 'https://www.avataar.ai' },
     // { text: 'ACCESSORIES', href: 'https://www.avataar.ai' },
   ]);
