@@ -5,13 +5,11 @@ Major Issues:
 Minor Issues:
 - NavBar dropdown tick mark on haver missing, check figma
 - Dropdown items appear reverse fix that (using shift) (changing this might mess up the double item check system i got)
-- Transition is not smooth mke z levels very far apart
 
 QOL:
 - Find a better way to do dropdown css doing with variable seems dumb
 - maybe add min width or somethin so navbar doent look dumb when less width
 - At the end look into font weight not being like figma
-- Move assets to public folder
 
 
 DONT FORGET U ZOOMED PAGE

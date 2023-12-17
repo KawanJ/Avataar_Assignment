@@ -50,28 +50,8 @@ const ImageCarousel = () => {
 
   const [isHidden, setIsHidden] = useState(false);
 
-  const imageFunc1 = () => {
-    setCarouselState(4);
-    hideDesc();
-  }
-
-  const imageFunc2 = () => {
-    setCarouselState(5);
-    hideDesc();
-  }
-
-  const imageFunc3 = () => {
-    setCarouselState(1);
-    hideDesc();
-  }
-
-  const imageFunc4 = () => {
-    setCarouselState(2);
-    hideDesc();
-  }
-
-  const imageFunc5 = () => {
-    setCarouselState(3);
+  const imageFunc = (state) => {
+    setCarouselState(state);
     hideDesc();
   }
 
@@ -93,11 +73,11 @@ const ImageCarousel = () => {
   return (
     <div className='container'>
       <div className={`carousel state-${carouselState}`}>
-        <img src={images[0].src} alt={images[0].alt} onClick={imageFunc1} />
-        <img src={images[1].src} alt={images[1].alt} onClick={imageFunc2} />
-        <img src={images[2].src} alt={images[3].alt} onClick={imageFunc3} />
-        <img src={images[3].src} alt={images[4].alt} onClick={imageFunc4} />
-        <img src={images[4].src} alt={images[4].alt} onClick={imageFunc5} />
+        <img src={images[0].src} alt={images[0].alt} onClick={() => imageFunc(4)} />
+        <img src={images[1].src} alt={images[1].alt} onClick={() => imageFunc(5)} />
+        <img src={images[2].src} alt={images[3].alt} onClick={() => imageFunc(1)} />
+        <img src={images[3].src} alt={images[4].alt} onClick={() => imageFunc(2)} />
+        <img src={images[4].src} alt={images[4].alt} onClick={() => imageFunc(3)} />
         {!isHidden && (<div className='desc'> {images[carouselState-1].description} </div>)}
       </div>
       <div className='nav'>
@@ -106,6 +86,7 @@ const ImageCarousel = () => {
           <img
             src={index === carouselState-1 ? bar : dot}
             alt='State'
+            onClick={() => imageFunc(index+1)}
           />
         ))}
         <img src={rightArrow} alt='Right' onClick={goRight}></img>

@@ -38,7 +38,7 @@ const Navbar = () => {
     // Check if there is enough space to move an item from moreLinks to links
     if (moreLinks.length > 0) {
       const moreStyles = window.getComputedStyle(moreElement);
-      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) >= (moreLinks[moreLinks.length - 1].text.length * 7) + 80) {
+      if(parseFloat(linkStyles.getPropertyValue('margin-right')) + parseFloat(moreStyles.getPropertyValue('margin-left')) >= (moreLinks[moreLinks.length - 1].text.length * 7) + 70) {
         const newMoreLinks = moreLinks.slice(0, -1);
         const movedLink = moreLinks[moreLinks.length - 1];
 
